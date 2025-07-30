@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-tw">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,10 +9,212 @@
   <body>
     <%- include('./layout/header'); -%>
 
-    <h1 class="index-title">我是首頁</h1>
-    <img src="../assets/images/dog.jpg" style="width: 300px;" alt="cat">
+    <section>
+      <div class="home-banner mb-64">
+        <div class="banner-text">
+          <p class="display-1 text-on-dark mb-16">URBNSTEP</p>
+          <p class="h3 text-on-dark mb-48">Your Step, Your Statement</p>
+          <button type="button" class="btn">立即選購</button>
+        </div>
+      </div>
+    </section>
+    -->
 
-    <%- include('./layout/footer'); -%>
+    <!-- 新品上市 -->
+    <div class="container my-md-40">
+      <div class="row">
+        <div class="col-12">
+          <p class="display-2 text-center">New Arrival</p>
+          <p class="h2 text-center mb-32">新品上市</p>
+        </div>
+        <div class="col-6">
+          <div class="card">
+            <img src="../assets/images/new-1.png" alt="新品1" class="mb-12" />
+            <p class="h5 mb-4">Monoverse</p>
+            <p class="mb-40">NT$3,600</p>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card">
+            <img src="../assets/images/new-2.png" alt="新品2" class="mb-12" />
+            <p class="h5 mb-4">PLATFORM 404</p>
+            <p class="mb-40">NT$2,600</p>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card">
+            <img src="../assets/images/new-3.png" alt="新品3" class="mb-12" />
+            <p class="h5 mb-4">URBN Force</p>
+            <p class="mb-40">NT$3,200</p>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card">
+            <img src="../assets/images/new-4.png" alt="新品4" class="mb-12" />
+            <p class="h5 mb-4">Mode90</p>
+            <p class="mb-40">NT$4,000</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 熱銷補貨 -->
+    <div class="container py-64 py-md-40">
+      <p class="h2 h4-md mb-16">熱銷補貨</p>
+      <div class="row flex-md-nowrap overflow-x-md-auto">
+        <div class="col-3 col-md-4">
+          <div class="product">
+            <span class="product-tag">人氣 No.1</span>
+            <img src="../assets/images/product-3.png" alt="Melty Kiss" />
+          </div>
+        </div>
+        <div class="col-3 col-md-4">
+          <div class="product">
+            <span class="product-tag">人氣 No.1</span>
+            <img src="../assets/images/product.png" alt="PLATFORM 404" />
+          </div>
+        </div>
+        <div class="col-3 col-md-4">
+          <div class="product">
+            <span class="product-tag">人氣 No.1</span>
+            <img src="../assets/images/product-6.png" alt="R:UNER" />
+          </div>
+        </div>
+        <div class="col-3 col-md-4">
+          <div class="product">
+            <span class="product-tag">人氣 No.1</span>
+            <img src="../assets/images/product-4.png" alt="BOOMBLOK" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="py-48">
+      <div class="sale-banner">
+        <p class="display-2 text-on-dark mb-16">
+          <span class="mr-24">URBNSTEP</span>
+          <span class="mr-24 text-primary-300">x</span>
+          <span class="">Kevin Chen</span>
+        </p>
+        <p class="h2 text-on-dark mb-32">跨界聯名，限量發售</p>
+        <p class="text-neutral-500 text-label-lg mb-48">
+          新銳漫畫家 Kevin Chen 親自操刀設計，街頭能量全面引爆！
+        </p>
+        <button type="button" class="btn">立即搶購</button>
+      </div>
+    </section>
+
+    <!-- 依系列選購 -->
+    <div class="container py-64">
+      <p class="h2 h4-md mb-16">依系列選購</p>
+      <div class="row">
+        <div class="col-3">
+          <div class="category">
+            <img
+              src="../assets/images/product-6.png"
+              alt="URBN RUNNER 慢跑系列"
+            />
+            <div class="category-text">
+              <p class="h3 text-on-dark mb-8">URBN RUNNER</p>
+              <p class="h4 text-on-dark">慢跑系列</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="category">
+            <img
+              src="../assets/images/product-11.png"
+              alt="STREETMODE 滑板系列"
+            />
+            <div class="category-text">
+              <p class="h3 text-on-dark mb-8">STREETMODE</p>
+              <p class="h4 text-on-dark">滑板系列</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="category">
+            <img
+              src="../assets/images/product-9.png"
+              alt="CHUNK DISTRICT 厚底系列"
+            />
+            <div class="category-text">
+              <p class="h3 text-on-dark mb-8">CHUNK DISTRICT</p>
+              <p class="h4 text-on-dark">厚底系列</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="category">
+            <img
+              src="../assets/images/product-10.png"
+              alt="COLLAB ZONE 聯名企劃"
+            />
+            <div class="category-text">
+              <p class="h3 text-on-dark mb-8">COLLAB ZONE</p>
+              <p class="h4 text-on-dark">聯名企劃</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 穿搭靈感 -->
+    <div class="container py-64">
+      <p class="h2 h4-md mb-16">穿搭靈感</p>
+      <div class="inspiration-row">
+        <div class="inspiration-col-4">
+          <div class="inspiration-row">
+            <div class="inspiration-col-6">
+              <img src="../assets/images/inspiration-1.png" alt="穿搭靈感1" />
+            </div>
+            <div class="inspiration-col-6">
+              <img src="../assets/images/inspiration-2.png" alt="穿搭靈感2" />
+            </div>
+            <div class="inspiration-col-12">
+              <img src="../assets/images/inspiration-3.png" alt="穿搭靈感3" />
+            </div>
+          </div>
+        </div>
+        <div class="inspiration-col-4">
+          <div class="inspiration-row">
+            <div class="inspiration-col-6">
+              <img src="../assets/images/inspiration-4.png" alt="穿搭靈感4" />
+            </div>
+            <div class="inspiration-col-6">
+              <img src="../assets/images/inspiration-5.png" alt="穿搭靈感5" />
+            </div>
+            <div class="inspiration-col-6">
+              <img src="../assets/images/inspiration-6.png" alt="穿搭靈感6" />
+            </div>
+            <div class="inspiration-col-6">
+              <img src="../assets/images/inspiration-7.png" alt="穿搭靈感7" />
+            </div>
+            <div class="inspiration-col-6">
+              <img src="../assets/images/inspiration-8.png" alt="穿搭靈感8" />
+            </div>
+            <div class="inspiration-col-6">
+              <img src="../assets/images/inspiration-9.png" alt="穿搭靈感9" />
+            </div>
+          </div>
+        </div>
+        <div class="inspiration-col-4">
+          <div class="inspiration-row">
+            <div class="inspiration-col-12">
+              <img src="../assets/images/inspiration-10.png" alt="穿搭靈感10" />
+            </div>
+            <div class="inspiration-col-6">
+              <img src="../assets/images/inspiration-11.png" alt="穿搭靈感11" />
+            </div>
+            <div class="inspiration-col-6">
+              <img src="../assets/images/inspiration-12.png" alt="穿搭靈感12" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <%- include('./layout/register'); -%> <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
   </body>

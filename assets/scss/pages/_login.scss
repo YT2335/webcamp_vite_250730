@@ -1,0 +1,29 @@
+@media (max-width: 767px) {
+  .login img {
+    width: 100%;
+  }
+}
+
+.login-method img {
+  width: 40px;
+}
+
+.login-method .btn {
+  width: 80%;
+  text-align: left;
+  margin-bottom: 8px;
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(222, 226, 230, 1);
+}
+
+.nav-link {
+  padding: 12px 130px;
+  display: inline-block;
+  border-bottom: 2px solid var(--Neutral-300);
+  color: var(--Neutral-600);
+}
+
+.nav-item .active {
+  border-bottom: 2px solid var(--Neutral-900);
+  color: var(--Neutral-900);
+}

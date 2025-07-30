@@ -1,0 +1,66 @@
+// .container {
+//   padding-left: 12px;
+//   padding-right: 12px;
+// }
+
+/* banner */
+.banner {
+  background-image: url(../assets/images/Hero\ Section.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 152px 0px;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .banner {
+    padding: 87px 0px;
+    background-image: url(../assets/images/hero-sm.png);
+  }
+}
+
+/* quote */
+.quote {
+  text-align: center;
+  background: var(--primary-100);
+}
+
+@media (max-width: 767px) {
+  .quote {
+    text-align: left;
+  }
+}
+
+/* 品牌簡介 */
+.brand-intro img {
+  width: 1076px;
+  margin-right: -110px;
+  margin-left: -110px;
+}
+
+/* 品牌歷史 */
+.brand-history li {
+  list-style: disc;
+  list-style-position: inside;
+}
+
+.brand-history span {
+  border-left: 1px solid rgba(33, 37, 41, 1);
+  padding-left: 8px;
+  margin-left: 8px;
+}
+
+/* 品牌理念 */
+.brand-concept p {
+  border-left: 3px solid rgba(222, 226, 230, 1);
+  padding-left: 8px;
+}
+
+/* 品牌小故事 */
+.brand-story a {
+  color: rgba(87, 162, 3, 1);
+  border-bottom: 1px solid rgba(87, 162, 3, 1);
+  margin-left: 8px;
+  padding-bottom: 4px;
+}

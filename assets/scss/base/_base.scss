@@ -1,0 +1,25 @@
+/* 盒模型 */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 基本樣式 */
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  color: var(--Neutral-900);
+}
+
+img {
+  vertical-align: middle; /* 移除圖片空隙 (emmet:vam) */
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: var(--Neutral-900);
+}

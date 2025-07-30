@@ -1,0 +1,11 @@
+/* 麵包穴導覽樣式設定 */
+.breadcrumb-item-link::after {
+  content: " / ";
+  font-weight: 700;
+  margin: 0px 12px;
+  color: var(--Neutral-300);
+}
+
+.breadcrumb-item-link {
+  color: var(--Neutral-600);
+}

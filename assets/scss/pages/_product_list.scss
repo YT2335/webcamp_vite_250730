@@ -1,0 +1,55 @@
+body {
+  font-weight: 500;
+}
+
+.container {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+/* 左側--產品類別--menu */
+.menu li {
+  padding: 8px 0px;
+  margin-bottom: 16px;
+}
+
+.menu-item:hover {
+  color: var(--primary-400);
+  cursor: pointer;
+}
+
+/* 右側--產品列表--product_cardlist */
+.product_card img {
+  padding-bottom: 12px;
+}
+
+.product_card h6 {
+  font-weight: 700;
+  padding-bottom: 4px;
+}
+
+@media (max-width: 767px) {
+  .product_card img {
+    padding-bottom: 8px;
+  }
+  .product_card h6 {
+    padding-bottom: 0px;
+  }
+}
+
+/* pagebar */
+.page-item .btn {
+  padding: 8px 15px;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+.page-item .active {
+  background-color: var(--primary-300);
+  font-weight: 500;
+}
+
+.page-item:hover {
+  background-color: var(--Neutral-100);
+  font-weight: 500;
+}

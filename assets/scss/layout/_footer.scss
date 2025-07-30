@@ -1,4 +1,45 @@
-.footer{
-  background: #69F0AE;
-  font-size: 64px;
+/* register */
+.register {
+  text-align: center;
+  background: var(--primary-200);
+  padding: 24px 0px;
+}
+
+.register p {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+.register .btn {
+  background: var(--Neutral-900);
+  color: rgba(255, 255, 255, 1);
+}
+.register .btn:hover {
+  background: rgba(73, 80, 87, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+/* footer */
+.footer {
+  background: var(--Neutral-100);
+  padding: 64px 0px;
+}
+
+.footer li {
+  font-weight: 500;
+}
+
+@media (max-width: 576px) {
+  .footer img {
+    width: 129px;
+  }
+}
+
+.copyright {
+  text-align: center;
+  font-size: 14px;
+  color: var(--Neutral-600);
+  padding-top: 32px;
+  border-top: 1px solid var(--Neutral-300);
 }

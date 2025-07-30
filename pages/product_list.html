@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>產品列表頁</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+
+    <main class="container py-32 py-md-16 mb-48">
+      <!-- 麵包穴導覽--Breadcrumbs -->
+      <div class="mb-24 mb-md-12">
+        <ol class="container breadcrumb d-flex">
+          <li class="label-md-sm">
+            <a href="index.html" class="breadcrumb-item-link">首頁</a>
+          </li>
+          <li class="breadcrumb-item-link label-md-sm">女鞋</li>
+          <li class="label-md-sm">所有商品</li>
+        </ol>
+      </div>
+      <h3 class="h3 h4-md container mb-24 mb-md-12">女鞋</h3>
+      <div class="row">
+        <!-- 左側--產品類別 -->
+        <div class="col-2 d-sm-none">
+          <div>
+            <ul class="container menu">
+              <li class="menu-item">所有商品</li>
+              <li class="menu-item">慢跑鞋</li>
+              <li class="menu-item">滑板鞋</li>
+              <li class="menu-item">厚底鞋</li>
+              <li class="menu-item">限定 / 聯名企劃</li>
+            </ul>
+          </div>
+        </div>
+        <!-- 右側--產品列表 -->
+        <div class="product_cardlist col-10 col-md-4">
+          <div class="row">
+            <div class="product_card col-4 col-md-2 mb-48 mb-md-24">
+              <a href="product_detail.html">
+                <img src="/assets/images/product.png" alt="PLATFORM 404" />
+                <h6>PLATFORM 404</h6>
+                <p>NT$2,600</p>
+              </a>
+            </div>
+            <div class="product_card col-4 col-md-2 mb-48 mb-md-24">
+              <a href="product_detail.html">
+                <img src="/assets/images/product-1.png" alt="PLATFORM 404" />
+                <h6>PLATFORM 404</h6>
+                <p>NT$2,600</p>
+              </a>
+            </div>
+            <div class="product_card col-4 col-md-2 mb-48 mb-md-24">
+              <div>
+                <img src="/assets/images/product-2.png" alt="VM001" />
+                <h6>VM001</h6>
+                <p>NT$2,600</p>
+              </div>
+            </div>
+            <div class="product_card col-4 col-md-2 mb-48 mb-md-24">
+              <div>
+                <img src="/assets/images/product-3.png" alt="Melty Kiss" />
+                <h6>Melty Kiss</h6>
+                <p>NT$4,000</p>
+              </div>
+            </div>
+            <div class="product_card col-4 col-md-2 mb-48 mb-md-24">
+              <div>
+                <img src="/assets/images/product-4.png" alt="BOOMBLOK" />
+                <h6>BOOMBLOK</h6>
+                <p>NT$3,200</p>
+              </div>
+            </div>
+            <div class="product_card col-4 col-md-2 mb-48 mb-md-24">
+              <div>
+                <img src="/assets/images/product-5.png" alt="BOOMBLOK" />
+                <h6>BOOMBLOK</h6>
+                <p>NT$3,200</p>
+              </div>
+            </div>
+            <div class="product_card col-4 col-md-2 mb-48 mb-md-24">
+              <div>
+                <img src="/assets/images/product-6.png" alt="R:UNER" />
+                <h6>R:UNER</h6>
+                <p>NT$4,000</p>
+              </div>
+            </div>
+            <div class="product_card col-4 col-md-2 mb-48 mb-md-24">
+              <div>
+                <img src="/assets/images/product-7.png" alt="Sugar Snap" />
+                <h6>Sugar Snap</h6>
+                <p>NT$4,000</p>
+              </div>
+            </div>
+            <div class="product_card col-4 col-md-2 mb-48 mb-md-32">
+              <div>
+                <img src="/assets/images/product-8.png" alt="Neofoam" />
+                <h6>Neofoam</h6>
+                <p>NT$4,000</p>
+              </div>
+            </div>
+            <div
+              class="product_card col-4 col-md-2 d-none d-md-block mb-48 mb-md-32"
+            >
+              <div>
+                <img src="/assets/images/product-9.png" alt="Buttermood" />
+                <h6>Buttermood</h6>
+                <p>NT$4,000</p>
+              </div>
+            </div>
+          </div>
+          <!-- pagebar -->
+          <ul class="pagebar d-flex jcc">
+            <li class="page-item mr-12">
+              <button type="button" class="btn" disabled>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-chevron-left"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"
+                  />
+                </svg>
+              </button>
+            </li>
+            <li class="page-item mr-8">
+              <button type="button" class="btn active">1</button>
+            </li>
+            <li class="page-item mr-8">
+              <button type="button" class="btn">2</button>
+            </li>
+            <li class="page-item mr-8">
+              <button type="button" class="btn">3</button>
+            </li>
+            <li class="page-item mr-8">
+              <button type="button" class="btn">...</button>
+            </li>
+            <li class="page-item mr-8">
+              <button type="button" class="btn">10</button>
+            </li>
+            <li class="page-item">
+              <button type="button" class="btn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-chevron-right"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
+                  />
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <%- include('./layout/register'); -%> <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

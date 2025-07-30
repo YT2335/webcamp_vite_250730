@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>登入頁</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+
+    <!-- 登入/註冊 -->
+    <main>
+      <div class="container py-64">
+        <div class="row flex-md-nowrap">
+          <div class="col-5 col-md-4">
+            <picture class="login-img">
+              <source
+                media="(max-width: 767px)"
+                srcset="../assets/images/login-sm.png"
+              />
+              <img src="../assets/images/login1.png" alt="login-img" />
+            </picture>
+          </div>
+          <div class="col-7 col-md-4">
+            <div
+              style="
+                background-image: url(../assets/images/login-bg.png);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                border-radius: 10px;
+              "
+              class="py-120"
+            >
+              <h3 class="h3 mb-32 text-center">歡迎！</h3>
+              <ul class="nav d-flex jcc mb-32">
+                <li class="nav-item">
+                  <a
+                    class="h6 nav-link active"
+                    aria-current="page"
+                    href="login.html "
+                    >登入</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="h6 nav-link" href="singin.html">註冊</a>
+                </li>
+              </ul>
+              <div class="login-method text-center">
+                <button type="button" class="btn">
+                  <img
+                    src="../assets/images/Facebook.png"
+                    alt="Facebook 登入"
+                    class="mr-12"
+                  />Facebook 登入
+                </button>
+                <button type="button" class="btn">
+                  <img
+                    src="../assets/images/apple.png"
+                    alt="Apple 登入"
+                    class="mr-12"
+                  />Apple 登入
+                </button>
+                <button type="button" class="btn">
+                  <img
+                    src="../assets/images/google.png"
+                    alt="Google 登入"
+                    class="mr-12"
+                  />Google 登入
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

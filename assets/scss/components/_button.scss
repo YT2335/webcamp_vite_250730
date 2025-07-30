@@ -1,0 +1,23 @@
+.btn {
+  border-radius: 4px;
+  padding: 12px 24px;
+  cursor: pointer; /* 游標調整成手指樣式 */
+  border: none; /* 移除外框線 */
+  background-color: transparent; /* 背景透明 */
+}
+
+.btn.btn-bark {
+  background: var(--Neutral-900);
+  color: rgba(255, 255, 255, 1);
+}
+
+.btn.btn-bark:hover {
+  background: rgba(73, 80, 87, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+@media (max-width: 576px) {
+  .btn {
+    padding: 8px 16px;
+  }
+}
