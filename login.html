@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>登入頁</title>
+    <script type="module" crossorigin src="/webcamp_vite_250730/assets/main-DvCq05iT.js"></script>
+    <link rel="stylesheet" crossorigin href="/webcamp_vite_250730/assets/main-i6N_n-to.css">
+  </head>
+  <body>
+    <nav class="container d-flex aic py-16 py-sm-12">
+  <ul class="d-flex aic">
+    <li class="mr-48">
+      <a href="index.html">
+        <img src="/webcamp_vite_250730/assets/logo-RhEl2I3y.svg" alt="logo" />
+      </a>
+    </li>
+    <li class="mr-40 d-sm-none">
+      <a href="product_list.html" class="text-label-md">商品列表</a>
+    </li>
+    <li class="d-sm-none">
+      <a href="brand_story.html" class="text-label-md">品牌故事</a>
+    </li>
+  </ul>
+  <a href="login.html" class="login">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      fill="currentColor"
+      class="bi bi-person"
+      viewBox="0 0 16 16"
+    >
+      <path
+        d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"
+      />
+    </svg>
+  </a>
+</nav>
+
+    <!-- 登入/註冊 -->
+    <main>
+      <div class="container py-64">
+        <div class="row flex-md-nowrap">
+          <div class="col-5 col-md-4">
+            <picture class="login-img">
+              <source
+                media="(max-width: 767px)"
+                srcset="/webcamp_vite_250730/assets/login-sm-B9E3_WK4.png"
+              />
+              <img src="/webcamp_vite_250730/assets/login1-C5-37Bwi.png" alt="login-img" />
+            </picture>
+          </div>
+          <div class="col-7 col-md-4">
+            <div
+              style="
+                background-image: url(/webcamp_vite_250730/assets/login-bg-BFs-Bt8Q.png);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                border-radius: 10px;
+              "
+              class="py-120"
+            >
+              <h3 class="h3 mb-32 text-center">歡迎！</h3>
+              <ul class="nav d-flex jcc mb-32">
+                <li class="nav-item">
+                  <a
+                    class="h6 nav-link active"
+                    aria-current="page"
+                    href="login.html "
+                    >登入</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="h6 nav-link" href="singin.html">註冊</a>
+                </li>
+              </ul>
+              <div class="login-method text-center">
+                <button type="button" class="btn">
+                  <img
+                    src="data:image/png;base64,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"
+                    alt="Facebook 登入"
+                    class="mr-12"
+                  />Facebook 登入
+                </button>
+                <button type="button" class="btn">
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQUSURBVHgB7VhLaBNbGP7OTFoXt730guCjXAj34iXXhTfojYgumlp15cK40Y1tXQg+6sLXoiC2FdRNl4qCCxt14cooKEiNmi4UabRYETsq1og0VnRRbN2oneP/j810kiZzJhPjym+RzOP853zzv88BfqEyCFSI0KpoEJ9rogKyQWposCY1MTEtZEZqWuZF+uYjVABfBEP/r4tKITdpUrRJ8Z1UacgM/aQgRdx4kEyhmgSZGP11kVQUvkBkp2WPMXS7z6uEJ4KhMJkxEDjnn1ghZB++TPcYj1IZ1UglwaXh9WGzxkzQ0CB+KGRmGlpM5aOuBNmkNCCh9jN/kMCEkIi5+WZJgqw5GZB3KiG3eNECa4Gxt+/gRtKEaC6lSa3YQ/Y5Nqtfcv8u+Rvx0724dfUiGhcvcB1LH9Cgw0xYfl4EgaJSNXq3X59rJK3Fz/Sivr7Ouh95PupBSnwPQqC58M0cDYaWr20ngTb4xPEjh2xyp86ex+TklDdByhAzacydIHTRhQqwcsV/yJE7efYCysSctfOCxPoCgTvwiMjyZeRjCy0tDQ4N0/8nxDZuQHLgHurrfrPJjmXHkR567G1SiWZnVOf7oJDtXnJ3S9NqnHCYksEkkwN38XFqCnt2tFq+6AST7DjUDePFS9e5uYSCS2OOkvNlKNLyShUcrVs3o3P/LvjBWPYdYtt2uvolp51n6eQfuXvbB5dEomEVOdZKx45t8EuubddBZdBw2rE6pEKCAVMPQoGWpjV5Zi0HHDRjb8e9Df6sRXOXs1EsRFAlt3LFMvjBR9Ja4nq/5/HUR9oFwiZItldWjfo6f9qbnPKYC2cgHFy0cgTLXSgH/jC/rmETJNYTqsFuRd8NvxO51q0xz+Olg8usiU2hJHgrdQ9+0UG5sXWLN5Ka1DL2tf20Vk+pBDnJeq6tRdB5YDclcXWa+qpZ+xgLNkHj/o2MyswcjfFLCVSCbFbhJkLk7QQLgkTGocCFS5d9a3Hk+Ut1upGzZY6RR1BKcQUKsBY7j/aiXHAjsZdqsRIyX0m68+ZDdjQzv/GvKF0GXabAq9dvKOqF3a0UEpk3r3bO8wOHj2H4yQhcQeY10sl9zkdzO2qJHi/by5MzpWsTtVds8sS1fmq5HlvXjYsWWlUn9+48+e3gw2EowWsXci42LhRZxz1hFD8Vos9I39xe+LR4JdED21nd+FngtXS9p+irUjJLI7TtBG07UZ09sYPABPlz89MS207X9rnaJFXkGK7NAgvyBFUxN82pIsfQocD77Oj4/D//uUr5idvwMH4MBsjPYyOD/YZqYHnHb5H17STRRWSD8IcBSiXd5ZwT+j7AJBMx2SYVWWGdvci4oCpV9QPMYrACyTSDvGXIBROTstq32i8p4776DPAXqolvsF6QnsmBbTsAAAAASUVORK5CYII="
+                    alt="Apple 登入"
+                    class="mr-12"
+                  />Apple 登入
+                </button>
+                <button type="button" class="btn">
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAARzSURBVHgB7VhBbBtFFP1/dpckdiJsNVSih3YrDhy7QUGqKKgbiUjc6lZFIuIQV+KCODRcySGOhNQjzoVTgfQUEEgJEgcEJN7cIlolPiKBlG0PJCoSTkWVNF3vfP4ssmvHu961nZoe+i4ez7yZffvn/z9/B+A5egNCj9i2rUxK02wkyhAI88nC0vWlcB9BtXzWKe9Bl+hK4P3J1y306RIi5gnAjJ9BDpG85UvpvOyUXegAHQncscdtXYM5nmZDlyCCRV9680mFJhKotnFYGHPMnoFjAIt0Afz5k2ubi3HcWIE7tmVqwighJtnKDkFUfGntzsftKKLd4P1Jy3pq4hRQ2BXbzrSlRA08Vcv99+iy7qcmso7TNsJDBSqfSwtjK4k4XmDPl/C9QCojkkuIe0HKITQJMMdrXDw6hyP/luGnZ+LEKehhnSk0inHilDAWs6BVU8XR6AcVK++cNz3PLzB/uibu5OrtPCREiwX/envcBsJSu0kcheuGTOeSWKBxXSTMja7e7igTtAg8+DJb2v/htC0fvBA6oVML9IomgQc/67aOWFLiWCRU7w0fIaM7uvrrWegjmtKMRpgPOl98DMPv/wGDb+42kTVDTECf0SRQiOaIG3xrNxCqBLOpF7M/brjQZ9S3+PFPhoUCtsJIwZavnhrLfv57GWJgFyomaLoJvcCvlp1CNgjAepoRQnLeCj9YMOO5ScQFXN0ocIqahh4gQVeu5AS6ap1VelLLtc6Qd6GPEERmvV1rIFD0mYi4Df0EollrCnjGURfI52bkqUBEWfifUBeoo3QjSYgXoZ8gcmvNehR7msHljx/K35FDmQ++vWDffNdxIG5thKImaTGOJ4XiiDOhY4hui8ChiUeu94uhtrkpWDa9E/DpwzH40x9SqcOBGDizw/G58kbFFNI4E0ngPFhrNgWJKgQa/9/cfxU+enABdvyUOofz1lLOhGOA8I1c1BifHPUk3SKQC80V9fsP6SzsDfiCBTZCR23Z+irXtkSPg7IeCbgeNc7B2rQDTQKNyaqz5Z1wpvds3trRsPmWNqR9Bt2KK1QyKI1lpOhiWHpivvF/Sz04vnTVZlO2LVgZTpX8a+WpFRc6EWfwNw6/ZBSHgNZLsyN2Y19Lor4z9Z3DvrgAMc/TUJReW7qSj+GBconxb67M7b/yyXY1vWm145Kn54/2hX40Wcu5jHGobSW51uC0wh9J4Eh+e0Ey8B/+JMiQEKYGcI5TRo7H63478PdlGKiExQgtrM2OzCQSqHB+6T2zKrwtIOgpKMIgDk9Davc6iGrNz9Fdm02HVuqRZ/HG1NcuopjgN3DhmCEH7sH+qRtQHfotEMeBEVmpx159KEv66JWS3WJ1BpXztMrVyxsfTrlRnNhqRlnSG/DHEgRORyAJC+kDf6KdOIWOrt8Cv0SvyM1L0C2I1tkuBZUtktC7usAMtp0OZ6RAm4/Ac3F8juq7HOErhNpKUmE9CWyEzXnu4aBuSZCmaPBTycGFAvdG9n3HubbS9RXwc/SKfwEcC6zoa5e4ywAAAABJRU5ErkJggg=="
+                    alt="Google 登入"
+                    class="mr-12"
+                  />Google 登入
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- footer -->
+<div class="footer py-sm-32">
+  <div class="container">
+    <div class="d-flex jcsb aic d-sm-block mb-24">
+      <a href="index.html" class="mb-sm-8">
+        <img src="/webcamp_vite_250730/assets/logo-RhEl2I3y.svg" alt="logo" />
+      </a>
+      <ul class="d-flex d-sm-block px-sm-12">
+        <li class="mr-40 me-sm-0 mb-sm-4">
+          <a href="product_list.html" class="py-12">商品列表</a>
+        </li>
+        <li>
+          <a href="brand_story.html" class="py-12">品牌故事</a>
+        </li>
+      </ul>
+    </div>
+    <!-- copyright -->
+    <div class="copyright">
+      <div class="container">
+        <p>Copyright ©2025 URBNSTYLE</p>
+        <p>All Rights Reserved.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </body>
+</html>

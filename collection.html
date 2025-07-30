@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>我的收藏</title>
+    <script type="module" crossorigin src="/webcamp_vite_250730/assets/main-DvCq05iT.js"></script>
+    <link rel="stylesheet" crossorigin href="/webcamp_vite_250730/assets/main-i6N_n-to.css">
+  </head>
+  <body>
+    <nav class="container d-flex aic py-16 py-sm-12">
+  <ul class="d-flex aic">
+    <li class="mr-48">
+      <a href="index.html">
+        <img src="/webcamp_vite_250730/assets/logo-RhEl2I3y.svg" alt="logo" />
+      </a>
+    </li>
+    <li class="mr-40 d-sm-none">
+      <a href="product_list.html" class="text-label-md">商品列表</a>
+    </li>
+    <li class="d-sm-none">
+      <a href="brand_story.html" class="text-label-md">品牌故事</a>
+    </li>
+  </ul>
+  <a href="login.html" class="login">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      fill="currentColor"
+      class="bi bi-person"
+      viewBox="0 0 16 16"
+    >
+      <path
+        d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"
+      />
+    </svg>
+  </a>
+</nav>
+
+    <main>
+      <div class="container py-64">
+        <div class="row jcc">
+          <div class="col-6 d-flex jcc">
+            <img
+              src="data:image/png;base64,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"
+              alt="我的收藏"
+              class="mr-16"
+            />
+            <h3 class="h3">我的收藏</h3>
+          </div>
+        </div>
+        <div class="row jcc py-32">
+          <div class="col-6 d-flex bg-color-primary-100 p-16">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              class="bi bi-truck mr-12 text-hightlight"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5zm1.294 7.456A2 2 0 0 1 4.732 11h5.536a2 2 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456M12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2"
+              />
+            </svg>
+            <p class="text-hightlight">
+              門市營業時間：週一至週五 10:00 - 22:00
+            </p>
+          </div>
+        </div>
+        <div class="row jcc">
+          <div class="col-6">
+            <ul class="product-list">
+              <li class="product-item d-flex py-32 bd-1">
+                <div class="product-item-img">
+                  <img
+                    src="/webcamp_vite_250730/assets/product-ByIiOSCa.png"
+                    alt="PLATFORM 404"
+                    width="120"
+                    height="120"
+                    class="mr-16"
+                  />
+                </div>
+                <div class="product-item-text">
+                  <h5 class="h5 mb-8">PLATFORM 404</h5>
+                  <p class="text-secondary mb-8">
+                    尺寸<span class="text-primary ml-12">38</span>
+                  </p>
+                  <p class="text-secondary mb-8">
+                    顏色<span class="text-primary ml-12">Navy</span>
+                  </p>
+                  <p class="h6 mb-8">NT$2,600</p>
+                </div>
+              </li>
+              <li class="product-item d-flex py-32 bd-1">
+                <div class="product-item-img">
+                  <img
+                    src="/webcamp_vite_250730/assets/product-4-CqyUCYzf.png"
+                    alt="BOOMLOK"
+                    width="120"
+                    height="120"
+                    class="mr-16"
+                  />
+                </div>
+                <div class="product-item-text">
+                  <h5 class="h5 mb-8">BOOMLOK</h5>
+                  <p class="text-secondary mb-8">
+                    尺寸<span class="text-primary ml-12">38</span>
+                  </p>
+                  <p class="text-secondary mb-8">
+                    顏色<span class="text-primary ml-12">White</span>
+                  </p>
+                  <p class="h6 mb-8">NT$3,200</p>
+                </div>
+              </li>
+              <li class="product-item d-flex py-32 bd-1">
+                <div class="product-item-img">
+                  <img
+                    src="/webcamp_vite_250730/assets/product-3-AxvEbKOW.png"
+                    alt="MELTY KISS"
+                    width="120"
+                    height="120"
+                    class="mr-16"
+                  />
+                </div>
+                <div class="product-item-text">
+                  <h5 class="h5 mb-8">MELTY KISS</h5>
+                  <p class="text-secondary mb-8">
+                    尺寸<span class="text-primary ml-12">38</span>
+                  </p>
+                  <p class="text-secondary mb-8">
+                    顏色<span class="text-primary ml-12">Violet</span>
+                  </p>
+                  <p class="h6 mb-8">NT$4,000</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row jcc py-32">
+          <div class="col-6 text-center">
+            <a href="#" class="btn btn-bark">立即預約門市試穿</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- footer -->
+<div class="footer py-sm-32">
+  <div class="container">
+    <div class="d-flex jcsb aic d-sm-block mb-24">
+      <a href="index.html" class="mb-sm-8">
+        <img src="/webcamp_vite_250730/assets/logo-RhEl2I3y.svg" alt="logo" />
+      </a>
+      <ul class="d-flex d-sm-block px-sm-12">
+        <li class="mr-40 me-sm-0 mb-sm-4">
+          <a href="product_list.html" class="py-12">商品列表</a>
+        </li>
+        <li>
+          <a href="brand_story.html" class="py-12">品牌故事</a>
+        </li>
+      </ul>
+    </div>
+    <!-- copyright -->
+    <div class="copyright">
+      <div class="container">
+        <p>Copyright ©2025 URBNSTYLE</p>
+        <p>All Rights Reserved.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </body>
+</html>
